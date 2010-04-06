@@ -33,7 +33,7 @@ module Devise
   end
 end
 
-CassandraObject::ClassMethods.class_eval do
+CassandraObject::class_eval do
   include Devise::Models
   include Devise::Orm::CassandraObject::Hook
 end
